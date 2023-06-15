@@ -1,6 +1,6 @@
 // Declarations
 const fs = require('fs');
-let raw_data = fs.readFileSync('./Pieces.json');
+let raw_data = fs.readFileSync('ui/Resources/Pieces.json');
 let pieces = JSON.parse(raw_data);
 let record = "";
 let ini = true;
@@ -70,5 +70,5 @@ function make_board(){
 }
 let add_new_rules = function(rule_title, rule) {
     let jsonData = JSON.stringify({rule_title : rule });
-    fs.appendFileSync('Rule.txt', jsonData);
+    fs.appendFileSync('ui/Resources/Rule.txt', jsonData);
 }
