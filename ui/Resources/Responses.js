@@ -1,7 +1,7 @@
 // Declarations
 const fs =require("fs");
 const readline = require("readline");
-let raw_data = fs.readFileSync('./pieces.json');
+let raw_data = fs.readFileSync('./Pieces.json');
 let pieces = JSON.parse(raw_data);
 let opening_data = fs.readFileSync("./openings.json");
 let openings = JSON.parse(opening_data);
