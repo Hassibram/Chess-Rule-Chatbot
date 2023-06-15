@@ -13,8 +13,8 @@ const io = new Server(server); //,{
 // }
 // });
 //change the socket port here for front end
-server.listen(3000, () => {
-    console.log('listening on *:3000');
+server.listen(8080, () => {
+    console.log('listening on *:8080');
 });
 
 app.use(express.static('ui/public'));
