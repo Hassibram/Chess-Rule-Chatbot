@@ -1,6 +1,6 @@
 // Declarations
 const fs = require('fs');
-let raw_data = fs.readFileSync("./Pieces.json");
+let raw_data = fs.readFileSync('./Pieces.json');
 let pieces = JSON.parse(raw_data);
 let record = "";
 let ini = true;
