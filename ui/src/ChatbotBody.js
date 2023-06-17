@@ -20,6 +20,13 @@ function ChatbotBody({ messages }) {
     }
   }
 
+  useEffect(() => {
+    // Auto-scroll to the bottom of the chat history whenever new messages are added
+    scrollToBottom();
+  }, [chatHistory]);
+
+  
+
   return (
     <Row css={S.chatbotBodyStyles}>
       {chatHistory && chatHistory.length > 0 ? (

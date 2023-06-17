@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const http = require('http');
+const https = require('https');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const kws = require('./KeyWords.js');
@@ -16,6 +17,19 @@ const io = new Server(server); //,{
 server.listen(3000, () => {
     console.log('listening on *:3000');
 });
+
+const options = {
+    key: fs.readFileSync('privatekey.pem'),
+    cert: fs.readFileSync('certificate.pem')
+  };
+  
+  const server = https.createServer(options, (req, res) => {
+    // Handle HTTPS requests
+  });
+  
+  server.listen(443, () => {
+    console.log('Server running on port 8080');
+  });
 
 app.use(express.static('ui/public'));
 

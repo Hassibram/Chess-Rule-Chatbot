@@ -117,3 +117,17 @@ Knights hold unique importance due to their distinct L-shaped movement. Valued a
 
 The Sicilian Defense: Considered the most common response to the King's Pawn Opening, you initiate the Sicilian Defense by responding to 1. e4 with c5. It's easy to build on this defense with a variety of different variations, such as the Najdorf, Dragon, or Classical Variations, among others -
 Modern Defense is a Great Opening to Play for a Win with Black.
+
+
+
+//Simple and unique questions one can ask a chess chatbot:
+
+What is the shortest possible checkmate in chess?
+What is the name of the chess piece that moves in an L-shape?
+How many squares are there on a standard chessboard?
+Can a pawn move backward in chess?
+In chess notation, what does "O-O" represent?
+What is the maximum number of moves required to checkmate an opponent in the worst-case scenario?
+Can a bishop move only on squares of a single color on the chessboard?
+What is the name of the move in which the king and rook swap places?
+
