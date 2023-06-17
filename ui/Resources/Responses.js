@@ -1,11 +1,11 @@
 // Declarations
 const fs =require("fs");
 const readline = require("readline");
-let raw_data = fs.readFileSync('./pieces.json');
+let raw_data = fs.readFileSync('ui/Resources/Pieces.json');
 let pieces = JSON.parse(raw_data);
-let opening_data = fs.readFileSync("./openings.json");
+let opening_data = fs.readFileSync("ui/Resources/openings.json");
 let openings = JSON.parse(opening_data);
-let Question_data = fs.readFileSync('./Questions.json');
+let Question_data = fs.readFileSync('ui/Resources/Questions.json');
 let questions = JSON.parse(Question_data);
 let more = 0;
 let ans_buffer = []
@@ -96,7 +96,7 @@ function next_ans(){
     }
     else return "";
 } //Iterates through the answers already found.
-async function searchFile(keywords, file="Rule.txt") {
+async function searchFile(keywords, file="ui/Resources/Rule.txt") {
     const fileStream = fs.createReadStream(file);
     const rl = readline.createInterface({
         input: fileStream,
