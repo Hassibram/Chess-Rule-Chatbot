@@ -5,7 +5,7 @@ import ChatbotFooter from "./ChatbotFooter";
 import React, { useState, useEffect } from "react";
 //change the socket port here for front end
 import { io } from "socket.io-client";
-const socket = io("//localhost:3000");
+const socket = io();
 socket.on('connect', function () {
   console.log("socket connected");
 });
